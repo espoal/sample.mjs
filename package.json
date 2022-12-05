@@ -1,0 +1,16 @@
+{
+  "name": "sample.mjs",
+  "packageManager": "yarn@3.3.0",
+  "scripts": {
+    "watch": "node build.mjs watch",
+    "build": "node build.mjs prod"
+  },
+  "workspaces": [
+    "dist",
+    "src",
+    "libs/*"
+  ],
+  "devDependencies": {
+    "@libs/build": "workspace:^"
+  }
+}
